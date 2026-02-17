@@ -32,36 +32,42 @@
       <form action="">
         <fieldset>
           <h2>Let's do this!</h2>
-          <div class="form-group">
-            <label for="first-name">First Name </label>
-            <input type="text" id="first-name" />
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="first-name">First Name </label><br />
+              <input type="text" id="first-name" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name </label><br />
+              <input type="text" id="last-name" required />
+            </div>
           </div>
-          <div class="form-group">
-            <label for="last-name">Last Name </label>
-            <input type="text" id="last-name" />
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="email">E-mail</label><br />
+              <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone-number">Phone Number</label><br />
+              <input type="tel" id="phone-number" required pattern='^(?:(?:\+44\s?|0)7\d{3}\s?\d{6}|(?:\+44\s?|0)1\d{3}\s?\d{6}|(?:\+44\s?|0)2\d{3}\s?\d{6})$'/>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="text" id="email" />
-          </div>
-          <div class="form-group">
-            <label for="phone-number">Phone Number</label>
-            <input type="tel" id="phone-number" />
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" />
-          </div>
-          <div class="form-group">
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" />
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="password">Password</label><br />
+              <input type="password" id="password" required />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label><br />
+              <input type="password" id="confirm-password" required />
+            </div>
           </div>
         </fieldset>
+        <div class="main-bottom-content">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="#">Log In</a></p>
+        </div>
       </form>
-      <div class="main-bottom-content">
-        <button type="button">Create Account</button>
-        <p>Already have an account?<a href="#">Log In</a></p>
-      </div>
     </main>
   </body>
 </html>
