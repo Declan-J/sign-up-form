@@ -127,6 +127,11 @@ input:focus {
   width: 100%;
 }
 
+.main-bottom-content a, .main-bottom-content a:visited {
+  text-decoration: none;
+  color: #596D48;
+}
+
 button {
   font-weight: bold;
   background-color: #596D48;
@@ -138,10 +143,6 @@ button {
   margin-bottom: 1.5rem;
 }
 
-a, a:visited {
-  text-decoration: none;
-  color: #596D48;
-}
 
 @media screen and (max-width: 620px) {
   .form-group-row {
